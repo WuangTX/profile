@@ -315,9 +315,51 @@ html {
 }
 
 /* Responsive Design */
+
+/* Large Desktop */
+@media (max-width: 1400px) {
+    #contact-page .navbar-frame {
+        left: 450px;
+        width: 600px;
+        font-size: 28px;
+    }
+    
+    .contact-hero-section {
+        width: 90%;
+        gap: 60px;
+    }
+}
+
+/* Desktop */
 @media (max-width: 1200px) {
+    #contact-page .profile-image {
+        left: 40px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    #contact-page .background-rect {
+        height: 200px;
+        top: -25px;
+    }
+    
+    #contact-page .nav-background {
+        left: 350px;
+        top: 30px;
+        width: calc(100% - 370px);
+        height: 60px;
+    }
+    
+    #contact-page .navbar-frame {
+        left: 370px;
+        top: 50px;
+        font-size: 24px;
+        width: calc(100% - 390px);
+    }
+    
     .contact-subtitle-header {
-        top: 210px;
+        top: 180px;
+        width: 95%;
     }
     
     .contact-subtitle-header p {
@@ -325,7 +367,7 @@ html {
     }
     
     .contact-hero-section {
-        top: 280px;
+        top: 240px;
         flex-direction: column;
         gap: 40px;
         width: 95%;
@@ -345,7 +387,7 @@ html {
     
     .contact-info-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
     }
     
@@ -355,11 +397,48 @@ html {
         flex-direction: column;
         gap: 10px;
     }
+    
+    .contact-form {
+        padding: 35px;
+    }
 }
 
+/* Tablet */
 @media (max-width: 768px) {
+    #contact-page {
+        min-height: 100vh;
+    }
+    
+    #contact-page .profile-image {
+        left: 20px;
+        width: 120px;
+        height: 120px;
+        top: 5px;
+    }
+    
+    #contact-page .background-rect {
+        height: 160px;
+        top: -15px;
+    }
+    
+    #contact-page .nav-background {
+        left: 150px;
+        top: 20px;
+        width: calc(100% - 170px);
+        height: 50px;
+    }
+    
+    #contact-page .navbar-frame {
+        left: 170px;
+        top: 35px;
+        font-size: 18px;
+        width: calc(100% - 190px);
+        line-height: 1;
+    }
+    
     .contact-subtitle-header {
-        top: 180px;
+        top: 140px;
+        width: 95%;
     }
     
     .contact-subtitle-header p {
@@ -367,9 +446,10 @@ html {
     }
     
     .contact-hero-section {
-        top: 240px;
+        top: 200px;
         flex-direction: column;
         gap: 30px;
+        width: 95%;
     }
     
     .contact-info-title h2 {
@@ -382,55 +462,192 @@ html {
         gap: 15px;
     }
     
+    .contact-info-item {
+        flex-direction: row;
+        text-align: left;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    
     .contact-form {
         padding: 25px;
-    }
-    
-    .navbar-frame {
-        font-size: 20px;
-        left: 350px;
-        width: 500px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-subtitle-header p {
-        font-size: 18px;
-    }
-    
-    .contact-info-title h2 {
-        font-size: 28px;
-    }
-    
-    .contact-form {
-        padding: 20px;
     }
     
     .form-group input,
     .form-group textarea {
         padding: 12px;
-        font-size: 14px;
+        font-size: 15px;
     }
     
     .submit-btn {
         padding: 12px 25px;
         font-size: 16px;
     }
-    
-    .navbar-frame {
-        font-size: 16px;
-        left: 280px;
-        width: 400px;
-    }
-    
-    .nav-contact,
-    .nav-skill,
-    .nav-about,
-    .nav-home {
-        width: 100px;
-    }
-    
+}
+
+/* Mobile */
+@media (max-width: 480px) {
     #contact-page {
-        min-height: 1600px;
+        min-height: 100vh;
+    }
+    
+    #contact-page .profile-image {
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        top: 5px;
+    }
+    
+    #contact-page .background-rect {
+        height: 140px;
+        top: -10px;
+    }
+    
+    #contact-page .nav-background {
+        left: 120px;
+        top: 15px;
+        width: calc(100% - 130px);
+        height: 45px;
+    }
+    
+    #contact-page .navbar-frame {
+        left: 130px;
+        top: 27px;
+        font-size: 14px;
+        width: calc(100% - 140px);
+    }
+    
+    .contact-subtitle-header {
+        top: 120px;
+        width: 98%;
+    }
+    
+    .contact-subtitle-header p {
+        font-size: 18px;
+    }
+    
+    .contact-hero-section {
+        top: 180px;
+        gap: 25px;
+        width: 98%;
+    }
+    
+    .contact-info-title h2 {
+        font-size: 28px;
+    }
+    
+    .contact-info-grid {
+        gap: 12px;
+    }
+    
+    .contact-info-item {
+        padding: 15px 12px;
+        gap: 12px;
+    }
+    
+    .contact-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .contact-details h3 {
+        font-size: 14px;
+    }
+    
+    .contact-details p {
+        font-size: 12px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .form-group textarea {
+        min-height: 100px;
+    }
+    
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .success-content {
+        padding: 30px;
+        margin: 0 10px;
+    }
+    
+    .success-content h3 {
+        font-size: 20px;
+    }
+    
+    .success-content p {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    #contact-page .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #contact-page .navbar-frame {
+        font-size: 12px;
+        left: 100px;
+    }
+    
+    .contact-subtitle-header p {
+        font-size: 16px;
+    }
+    
+    .contact-info-title h2 {
+        font-size: 24px;
+    }
+    
+    .contact-info-item {
+        padding: 12px 10px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .contact-details h3 {
+        font-size: 13px;
+    }
+    
+    .contact-details p {
+        font-size: 11px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    .submit-btn {
+        padding: 8px 15px;
+        font-size: 13px;
     }
 }

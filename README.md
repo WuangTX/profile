@@ -1,7 +1,7 @@
 # Portfolio Website - Tran Xuan Quang
 
 ## 🚀 Live Website
-Visit: [Your Domain](https://yourdomain.com)
+Visit: [quangtx.io.vn](https://quangtx.io.vn)
 
 ## 📋 Mô tả dự án
 Website portfolio được tạo dựa trên thiết kế Figma, sử dụng HTML, CSS và JavaScript thuần.
