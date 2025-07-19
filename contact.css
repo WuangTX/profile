@@ -316,19 +316,6 @@ html {
 
 /* Responsive Design */
 
-/* Large Desktop */
-@media (max-width: 1400px) {
-    #contact-page .navbar-frame {
-        left: 450px;
-        width: 600px;
-        font-size: 28px;
-    }
-    
-    .contact-hero-section {
-        width: 90%;
-        gap: 60px;
-    }
-}
 
 /* Desktop */
 @media (max-width: 1200px) {
