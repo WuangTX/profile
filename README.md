@@ -127,3 +127,4 @@ Chỉ cần upload toàn bộ thư mục lên hosting service.
 ---
 
 **Lưu ý**: Đây là bản recreate từ thiết kế Figma sử dụng HTML/CSS/JS thuần. Tất cả code đều tương thích với modern browsers và không phụ thuộc vào framework nào.
+
